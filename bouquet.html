@@ -2,68 +2,36 @@
 
 <html>
 <head>
-<title>Surprise</title>
+<title>Bouquet</title>
 
 <style>
-body{
-margin:0;
-overflow:hidden;
-text-align:center;
-font-family:Arial;
-background:#ffc0cb;
-}
+body{background:#ffc0cb;text-align:center;font-family:Arial;}
 
-.heart{
-position:fixed;
-bottom:-50px;
-color:red;
-font-size:20px;
-animation:float 6s infinite;
-}
+.sideimg{position:fixed;top:20%;width:200px;box-shadow:0 0 20px pink;border-radius:20px;}
+.left{left:0;}
+.right{right:0;}
 
-@keyframes float{
-0%{transform:translateY(0);}
-100%{transform:translateY(-100vh);}
-}
+.zoom{animation:zoom 3s infinite alternate;}
+@keyframes zoom{from{transform:scale(1);}to{transform:scale(1.1);}}
 
-button{
-background-color:#ff99cc;
-border:none;
-padding:15px 30px;
-font-size:18px;
-border-radius:25px;
-cursor:pointer;
-}
+button{background:#ff99cc;border:none;padding:15px 30px;font-size:20px;border-radius:25px;}
 </style>
 
 </head>
 
 <body>
 
-<div class="heart" style="left:10%;">❤️</div>
-<div class="heart" style="left:30%;animation-delay:2s;">💖</div>
-<div class="heart" style="left:50%;animation-delay:4s;">💕</div>
-<div class="heart" style="left:70%;animation-delay:1s;">💗</div>
-<div class="heart" style="left:90%;animation-delay:3s;">💓</div>
+<img src="photo1.jpg" class="sideimg left">
+<img src="photo2.jpg" class="sideimg right">
 
-<h1>YOU GOT IT RIGHT ❤️</h1>
+<h1>WELCOME BACK DOLCY 💐</h1>
 
-<h2>This Is For You Dolcy 💐</h2>
-
-<img src="photo1.jpg" width="200">
-<img src="photo2.jpg" width="200">
-<img src="photo3.jpg" width="200">
+<img src="bouquet.jpg" width="300" class="zoom">
 
 <br><br>
 
-<img src="bouquet.jpg" width="300">
-
-<br><br>
-
-<h3>Welcome Back Home 🎉</h3>
-
-<a href="index.html">
-<button>Go Back Home</button>
+<a href="quiz.html">
+<button>Next ➡️</button>
 </a>
 
 </body>
