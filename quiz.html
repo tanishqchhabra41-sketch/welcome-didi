@@ -2,62 +2,33 @@
 
 <html>
 <head>
-<title>Dolcy Quiz</title>
+<title>Quiz</title>
 
 <style>
-body{
-margin:0;
-overflow:hidden;
-text-align:center;
-font-family:Arial;
-background:#ffc0cb;
-}
+body{background:#ffc0cb;text-align:center;font-family:Arial;}
 
-.heart{
-position:fixed;
-bottom:-50px;
-color:red;
-font-size:20px;
-animation:float 6s infinite;
-}
+.sideimg{position:fixed;top:20%;width:200px;box-shadow:0 0 20px pink;border-radius:20px;}
+.left{left:0;}
+.right{right:0;}
 
-@keyframes float{
-0%{transform:translateY(0);}
-100%{transform:translateY(-100vh);}
-}
-
-button{
-background-color:#ff99cc;
-border:none;
-padding:15px 30px;
-font-size:18px;
-border-radius:25px;
-cursor:pointer;
-}
+button{background:#ff99cc;border:none;padding:15px 30px;font-size:18px;border-radius:25px;}
 </style>
 
 </head>
 
 <body>
 
-<div class="heart" style="left:10%;">❤️</div>
-<div class="heart" style="left:30%;animation-delay:2s;">💖</div>
-<div class="heart" style="left:50%;animation-delay:4s;">💕</div>
-<div class="heart" style="left:70%;animation-delay:1s;">💗</div>
-<div class="heart" style="left:90%;animation-delay:3s;">💓</div>
-
-<h1>WELCOME BACK DOLCY 💖</h1>
-
-<hr>
+<img src="photo1.jpg" class="sideimg left">
+<img src="photo2.jpg" class="sideimg right">
 
 <h2>QUIZ TIME 😜</h2>
 
-<form action="bouquet.html">
+<form action="letter.html">
 
 <p>1. What did you miss the most while you were there?</p>
-<input type="radio" name="q1">khapp<br>
-<input type="radio" name="q1">satsang<br>
-<input type="radio" name="q1">food<br><br>
+<input type="radio" name="q1">Khapp<br>
+<input type="radio" name="q1">Satsang<br>
+<input type="radio" name="q1">Food<br><br>
 
 <p>2. Have you missed me everyday?</p>
 <input type="radio" name="q2">Yes 😍<br>
@@ -66,22 +37,10 @@ cursor:pointer;
 
 <p>3. What was the first thing that came in your mind after you saw me?</p>
 <input type="radio" name="q3">Hug<br>
-<input type="radio" name="q3">Tight Hug 🤗<br>
-<input type="radio" name="q3">Tightest Hug<br><br>
+<input type="radio" name="q3">TightHug 🤗<br>
+<input type="radio" name="q3">Tightest Hug❤️<br><br>
 
-
-
-<a href="letter.html">
-<button type="button">Read Welcome Letter 💌</button>
-</a>
-
-<br><br>
-
-<a href="secret.html">
-<button type="button">Click For Secret 🤫</button>
-</a>
-<br><br>
-  <button type="submit">Submit</button>
+<button type="submit">Next ➡️</button>
 
 </form>
 
