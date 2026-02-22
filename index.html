@@ -5,46 +5,29 @@
 <title>Welcome Dolcy</title>
 
 <style>
-body{
-margin:0;
-overflow:hidden;
-text-align:center;
-font-family:Arial;
-background:#ffc0cb;
-}
+body{margin:0;text-align:center;font-family:Arial;background:#ffc0cb;}
+button{background:#ff99cc;border:none;padding:15px 30px;font-size:20px;border-radius:25px;}
 
-.heart{
-position:fixed;
-bottom:-50px;
-color:red;
-font-size:20px;
-animation:float 6s infinite;
-}
+.sideimg{position:fixed;top:20%;width:200px;box-shadow:0 0 20px pink;border-radius:20px;}
+.left{left:0;}
+.right{right:0;}
 
-@keyframes float{
-0%{transform:translateY(0);}
-100%{transform:translateY(-100vh);}
-}
+.fadein{animation:fade 2s;}
+@keyframes fade{from{opacity:0;transform:translateY(50px);}to{opacity:1;transform:translateY(0);}}
 
-button{
-background-color:#ff99cc;
-border:none;
-padding:15px 30px;
-font-size:20px;
-border-radius:25px;
-cursor:pointer;
-}
+.heart{position:fixed;bottom:-50px;font-size:20px;animation:float 6s infinite;}
+@keyframes float{0%{transform:translateY(0);}100%{transform:translateY(-100vh);}}
 </style>
 
 </head>
 
 <body>
 
+<img src="photo1.jpg" class="sideimg left">
+<img src="photo2.jpg" class="sideimg right">
+
 <div class="heart" style="left:10%;">❤️</div>
-<div class="heart" style="left:30%;animation-delay:2s;">💖</div>
-<div class="heart" style="left:50%;animation-delay:4s;">💕</div>
-<div class="heart" style="left:70%;animation-delay:1s;">💗</div>
-<div class="heart" style="left:90%;animation-delay:3s;">💓</div>
+<div class="heart" style="left:50%;animation-delay:2s;">💖</div>
 
 <audio id="music" loop>
 <source src="music.mp3" type="audio/mpeg">
@@ -52,10 +35,10 @@ cursor:pointer;
 
 <br><br><br><br><br>
 
-<h1>HEY DOLCY 👋</h1>
-<h2>Someone Special Is Back From Canada 🍁</h2>
+<h1 class="fadein">HEY DOLCY 👋</h1>
+<h2 class="fadein">Someone Special Is Back From Canada 🍁</h2>
 
-<a href="quiz.html">
+<a href="bouquet.html">
 <button onclick="document.getElementById('music').play()">
 CLICK TO ENTER ❤️
 </button>
